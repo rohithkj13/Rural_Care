@@ -5,7 +5,7 @@ import { AuthContext } from '../context/AuthContext';
 import DoctorLayout from '../components/DoctorLayout';
 import {
   FaCalendarAlt, FaCheck, FaTimes, FaVideo, FaPhone, FaComments,
-  FaSearch, FaFilter, FaClock, FaUser
+  FaSearch, FaClock
 } from 'react-icons/fa';
 
 const STATUS_STYLES = {
@@ -19,7 +19,6 @@ const STATUS_STYLES = {
 const TYPE_ICON = { video: FaVideo, audio: FaPhone, chat: FaComments };
 
 const DoctorAppointments = () => {
-  const { user } = useContext(AuthContext);
   const [appointments, setAppointments] = useState([]);
   const [filtered, setFiltered] = useState([]);
   const [loading, setLoading] = useState(true);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { adminAPI } from '../services/api';
 import AdminLayout from '../components/AdminLayout';
-import { FaChartBar, FaUsers, FaMapMarkerAlt, FaUserMd } from 'react-icons/fa';
+import { FaUsers, FaMapMarkerAlt, FaUserMd } from 'react-icons/fa';
 
 const BarChart = ({ data, keyField, valueField, color = 'bg-indigo-500', maxBars = 10 }) => {
   const items = (data || []).slice(0, maxBars);

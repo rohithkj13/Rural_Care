@@ -31,7 +31,6 @@ import AdminComplaints from './pages/AdminComplaints';
 import DoctorsList from './pages/DoctorsList';
 import BookAppointment from './pages/BookAppointment';
 import QuickBookAppointment from './pages/QuickBookAppointment';
-import Appointments from './pages/Appointments';
 import MyAppointments from './pages/MyAppointments';
 import Consultation from './pages/Consultation';
 import Prescriptions from './pages/Prescriptions';

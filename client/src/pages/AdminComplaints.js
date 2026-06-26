@@ -28,7 +28,7 @@ const AdminComplaints = () => {
   const [submitting, setSubmitting] = useState(false);
   const [toast, setToast] = useState(null);
 
-  useEffect(() => { fetchData(); }, [statusFilter]);
+  useEffect(() => { fetchData(); }, [statusFilter]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchData = async () => {
     setLoading(true);

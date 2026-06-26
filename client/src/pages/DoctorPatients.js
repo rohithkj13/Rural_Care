@@ -4,7 +4,6 @@ import DoctorLayout from '../components/DoctorLayout';
 import { FaUsers, FaSearch, FaCalendarAlt, FaFileMedical, FaPhone, FaEnvelope, FaChevronDown, FaChevronUp, FaRobot, FaUserMd, FaSave, FaEye } from 'react-icons/fa';
 
 const DoctorPatients = () => {
-  const [appointments, setAppointments] = useState([]);
   const [patients, setPatients] = useState([]);
   const [search, setSearch] = useState('');
   const [loading, setLoading] = useState(true);

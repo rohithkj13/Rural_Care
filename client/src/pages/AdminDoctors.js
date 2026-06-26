@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { adminAPI } from '../services/api';
 import AdminLayout from '../components/AdminLayout';
 import {
-  FaUserMd, FaSearch, FaPlus, FaCheck, FaTrash, FaEdit,
-  FaTimes, FaSave, FaGraduationCap, FaHospital, FaFilter,
+  FaUserMd, FaSearch, FaPlus, FaTrash, FaEdit,
+  FaTimes, FaSave, FaGraduationCap, FaHospital,
   FaExclamationTriangle, FaCheckCircle
 } from 'react-icons/fa';
 
@@ -22,7 +22,7 @@ const AdminDoctors = () => {
   const [toast, setToast] = useState(null);
   const [confirmDelete, setConfirmDelete] = useState(null);
 
-  useEffect(() => { fetchDoctors(); }, [filter]);
+  useEffect(() => { fetchDoctors(); }, [filter]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchDoctors = async () => {
     setLoading(true);

@@ -4,7 +4,7 @@ import AdminLayout from '../components/AdminLayout';
 import {
   FaUsers, FaSearch, FaEdit, FaBan, FaCheckCircle, FaChevronDown,
   FaChevronUp, FaCalendarAlt, FaFileMedical, FaTimes, FaSave,
-  FaExclamationTriangle, FaPhone, FaEnvelope, FaMapMarkerAlt
+  FaPhone, FaEnvelope, FaMapMarkerAlt
 } from 'react-icons/fa';
 
 const AdminPatients = () => {
@@ -19,7 +19,7 @@ const AdminPatients = () => {
   const [submitting, setSubmitting] = useState(false);
   const [toast, setToast] = useState(null);
 
-  useEffect(() => { fetchPatients(); }, []);
+  useEffect(() => { fetchPatients(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchPatients = async () => {
     setLoading(true);

@@ -6,21 +6,18 @@ import { FaTint, FaTrash, FaCheck, FaTimes, FaAmbulance, FaUserSlash, FaSearch, 
 export default function AdminBloodDonors() {
   const [donors, setDonors] = useState([]);
   const [requests, setRequests] = useState([]);
-  const [stats, setStats] = useState({});
   const [search, setSearch] = useState('');
   const [loading, setLoading] = useState(true);
 
   const load = async () => {
     setLoading(true);
     try {
-      const [d, r, s] = await Promise.all([
+      const [d, r] = await Promise.all([
         bloodAPI.getAllDonorsAdmin(),
-        bloodAPI.getAllRequestsAdmin(),
-        bloodAPI.getStats()
+        bloodAPI.getAllRequestsAdmin()
       ]);
       setDonors(d.data.data || []);
       setRequests(r.data.data || []);
-      setStats(s.data.data || {});
     } catch (err) {
       console.error(err);
     } finally {

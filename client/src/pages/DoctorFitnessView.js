@@ -21,7 +21,7 @@ const StatBadge = ({ value, goal, label, color }) => {
 };
 
 export default function DoctorFitnessView() {
-  const { user, logout } = useContext(AuthContext);
+  const { logout } = useContext(AuthContext);
   const [patients, setPatients] = useState([]);
   const [loading, setLoading] = useState(true);
   const [expanded, setExpanded] = useState(null);

@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { adminAPI } from '../services/api';
 import AdminLayout from '../components/AdminLayout';
-import { FaFileMedical, FaSearch, FaPrint } from 'react-icons/fa';
+import { FaFileMedical, FaSearch } from 'react-icons/fa';
 
 const AdminPrescriptions = () => {
   const [prescriptions, setPrescriptions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
 
-  useEffect(() => { fetchData(); }, []);
+  useEffect(() => { fetchData(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchData = async () => {
     setLoading(true);

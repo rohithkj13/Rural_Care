@@ -35,7 +35,7 @@ const DoctorDashboard = () => {
   const [actionLoading, setActionLoading] = useState(null);
   const [toast, setToast] = useState(null);
 
-  useEffect(() => { fetchData(); }, []);
+  useEffect(() => { fetchData(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const showToast = (msg, type = 'success') => {
     setToast({ msg, type });
