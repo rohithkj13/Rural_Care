@@ -5,6 +5,7 @@ import { FaUsers, FaSearch, FaCalendarAlt, FaFileMedical, FaPhone, FaEnvelope, F
 
 const DoctorPatients = () => {
   const [patients, setPatients] = useState([]);
+  const [appointments, setAppointments] = useState([]);
   const [search, setSearch] = useState('');
   const [loading, setLoading] = useState(true);
   const [expanded, setExpanded] = useState(null);
