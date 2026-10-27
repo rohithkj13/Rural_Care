@@ -292,3 +292,6 @@ The API is mounted at `/api`. The routes below are defined by the backend; `:id`
 - **Frontend cannot reach the API:** Confirm the backend is running on port `5000` and that the frontend is using the expected API base URL.
 - **Socket.IO connection issues:** Set `CLIENT_URL` to the frontend origin, such as `http://localhost:3000`.
 - **Video or voice features are unavailable:** Check browser support, grant camera/microphone permissions for consultations, and grant microphone permissions for speech recognition.
+
+## 🌐 Live Demo
+[Open RuralCare Connect](https://YOUR_LIVE_WEBSITE_URL)
